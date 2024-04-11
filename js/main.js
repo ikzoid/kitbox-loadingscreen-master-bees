@@ -176,7 +176,7 @@ $(document).ready(function() {
   setTimeout(function() {
     if (!isGmod) {
       debug("No Garry's mod testing..");
-      isTest = true;
+      isTest = false;
       loadAll();
 
       GameDetails(
@@ -188,7 +188,7 @@ $(document).ready(function() {
         "Gamemode"
       );
 
-      var totalTestFiles = 100;
+      var totalTestFiles = 0;
       SetFilesTotal(totalTestFiles);
 
       var needed = totalTestFiles;
